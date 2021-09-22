@@ -5,119 +5,100 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pagina de datos de futbol</title>
 
     <style>
-        * {
-            box-sizing: border-box;
+        table,
+        td,
+        th {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 5px;
         }
 
-        body {
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            color: #aaaaaa;
-        }
-
-        div.container {
-            overflow: auto;
-        }
-
-        header {
-            background-color: #e5e5e5;
-            padding: 15px;
-            text-align: center;
-        }
-
-        nav {
-            float: left;
-            width: 20%;
-            text-align: center;
-        }
-
-        nav ul {
-            padding-left: 0px;
-        }
-
-        nav li {
-            list-style: none;
-        }
-
-        nav li a {
-            background-color: #e5e5e5;
-            padding: 8px;
-            margin-top: 7px;
-            display: block;
+        table {
             width: 100%;
-            color: black;
-            font-weight: 700;
-        }
-
-        main {
-            float: left;
-            width: 60%;
-            padding: 0 20px;
-        }
-
-        .right {
-            background-color: #e5e5e5;
-            float: left;
-            width: 20%;
-            padding: 15px;
-            margin-top: 7px;
-            text-align: center;
-        }
-
-        footer {
-            background-color: #e5e5e5;
-            text-align: center;
-            padding: 10px;
-            margin-top: 7px;
-        }
-
-        /* For mobile phones: */
-        @media only screen and (max-width: 620px) {
-
-            nav,
-            main,
-            .right {
-                width: 100%;
-            }
         }
     </style>
 </head>
 
 <body>
-    <!-- Encabezado -->
-    <header>
-        <h1>Hola mundo!</h1>
-    </header>
-    <div class="container">
-        <!-- Navegación / cotenedor izquierdo -->
-        <nav>
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Multimedia</a></li>
-                <li><a href="#">Contacto</a></li>
-            </ul>
-        </nav>
-        <!-- Contenedor principal -->
-        <main>
-            <section>
-                <h2>Lorum Ipsum</h2>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                    diam nonummy nibh euismod tincidunt ut
-                    laoreet dolore magna aliquam erat volutpat.</p>
-            </section>
-        </main>
-        <!-- Contenedor secundario / derecho -->
-        <div class="right">
-            <h2>Info</h2>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
-        </div>
-    </div>
-    <!-- Pie de Página-->
-    <footer>
-        <p>© copyright labcomII.com</p>
-    </footer>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Dia</th>
+                <th>Mes</th>
+                <th>Año</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Lionel Messi</td>
+                <td>24</td>
+                <td>Junio</td>
+                <td>1987</td>
+            </tr>
+
+            <tr>
+                <td>Diego Maradona</td>
+                <td>30</td>
+                <td>Octubre</td>
+                <td>1960</td>
+            </tr>
+        </tbody>
+
+    </table>
+    <br />
+    <br />
+    <table>
+        <caption><b>Goleadores históricos</b></caption>
+
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Fecha Nacimiento</th>
+                <th>Pais</th>
+                <th>Lugar Nacimiento</th>
+                <th>Goles</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td><a href="https://es.wikipedia.org/wiki/Josef_Bican" target="_blank">Josef Bican</a></td>
+                <td>25/09/1913</td>
+                <td>Imperio Austrohúngaro(Austria)</td>
+                <td>Viena</td>
+                <td>805</td>
+            </tr>
+
+            <tr>
+                <td><a href="https://es.wikipedia.org/wiki/Cristiano_Ronaldo" target="_blank">Cristiano Ronaldo</a></td>
+                <td>05/02/1985</td>
+                <td>Portugal</td>
+                <td>Funchal, Madeira</td>
+                <td>788</td>
+            </tr>
+
+            <tr>
+                <td><a href="https://es.wikipedia.org/wiki/Rom%C3%A1rio" target="_blank">Romário</a></td>
+                <td>29/01/1966</td>
+                <td>Brasil</td>
+                <td>Rio de Janeiro</td>
+                <td>772</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan='4'><b>Maximo goleador vigente:</b> Cristiano Ronaldo</td>
+                <td><b>788</b></td>
+            </tr>
+        </tfoot>
+    </table>
 </body>
 
 </html>

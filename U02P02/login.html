@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in Page</title>
+</head>
+
+<body>
+    <h1>Bienvenido a la página para iniciar sesión</h1>
+    <hr>
+    <h2>¿Cómo iniciar sesión?</h2>
+    <p>
+        Para iniciar sesión, ingrese su nombre en el campo 'Usuario' y su clave
+        en el campo 'Clave', luego presione Submit.
+        Si desea guardar sus datos de inicio de sesión, marque el Check.
+    </p>
+
+    <br/>
+    <form action="/accion.php">
+        <label for="user">Usuario</label>
+        <input type="text" id="user" name="user" />
+
+        <label for="password">Clave</label>
+        <input type="password" id="password" name="password" />
+
+        <label for="checkbox">Check</label>
+        <input type="checkbox" name="checkA" id="checkB" />
+
+        <input type="submit" value="Submit" />
+
+        
+    </form>
+</body>
+
+</html>

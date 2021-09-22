@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+</head>
+
+<body>
+    <h1>Formulario de datos personales</h1>
+    <hr>
+
+    <form action="action.php">
+
+        <fieldset>
+            <legend><b>Informacion personal</b></legend>
+
+            <input type="text" value="ESTUDIANTE" size="8" disabled>
+
+            <br /> <br />
+
+            <label for="nombre_completo">Nombre completo</label>
+            <input type="text" id="nombre_completo" name="nombre_completo">
+
+            <br /> <br />
+
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email">
+
+            <br /> <br />
+
+            <label for="edad">Edad</label>
+            <input type="text" id="edad" name="edad" size="2">
+
+            <br /> <br />
+
+            <label for="nacionalidad">Nacionalidad</label>
+            <select name="seleccionable" id="seleccionable">
+                <option value="null"></option>
+                <option value="Argentina">Argentina</option>
+                <option value="Chile">Chilena</option>
+                <option value="Uruguay">Uruguaya</option>
+                <option value="Bolivia">Boliviana</option>
+                <option value="Paraguay">Paraguaya</option>
+            </select>
+
+            <br /> <br />
+
+            <label for="cond_laboral">Condición laboral</label>
+            <select name="seleccionable2" id="seleccionable2">
+                <option value="null"></option>
+                <option value="desempleado">Desempleado</option>
+                <option value="búsqueda_laboral">En búsqueda laboral</option>
+                <option value="trabajo_ptime">Trabajo Part time</option>
+                <option value="trabajo_ftime">Trabajo Full time</option>
+            </select>
+
+        </fieldset>
+
+        <fieldset>
+
+            <legend><b>Gustos personales</b></legend>
+
+            <label for="fav_music">Gustos musicales</label>
+            <input type="text" id="fav_music" name="fav_music" size="40">
+
+            <br /> <br />
+            <label for="fav_food">Comidas preferidas</label>
+            <select name="seleccionable3" id="seleccionable3">
+                <option value="null"></option>
+                <option value="asado">Asado</option>
+                <option value="pizza">Pizza</option>
+                <option value="pastas">Pastas</option>
+                <option value="hamburguesas">Hamburguesas</option>
+            </select>
+
+        </fieldset>
+
+       <br/>
+        <input type="submit" value="Enviar">
+
+        <label for="checkbox">Recordar</label>
+        <input type="checkbox" id="checkbox" name="checkbox" >
+
+    </form>
+</body>
+
+</html>
